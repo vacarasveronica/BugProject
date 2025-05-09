@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="iss.bugproject.controller.ManageAccountsController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20" prefWidth="300">
+
+    <Label text="Create New User"/>
+
+    <TextField fx:id="usernameField" promptText="Username"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <ChoiceBox fx:id="roleChoiceBox"/>
+
+    <Button text="Add User" onAction="#handleAddUser"/>
+
+    <Label fx:id="errorLabel" textFill="red"/>
+
+</VBox>

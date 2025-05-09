@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="iss.bugproject.controller.ViewBugListController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20" prefWidth="800">
+
+    <Label text="Bug List"/>
+    <TableView fx:id="bugTable" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="titleCol" text="Title" />
+            <TableColumn fx:id="descCol" text="Description" />
+            <TableColumn fx:id="statusCol" text="Status" />
+            <TableColumn fx:id="filePathCol" text="File Path" />
+            <TableColumn fx:id="fileDescCol" text="File Description" />
+            <TableColumn fx:id="assignCol" text="Assign" />
+            <TableColumn fx:id="solveCol" text="Solve" />
+        </columns>
+    </TableView>
+</VBox>

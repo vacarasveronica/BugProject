@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="iss.bugproject.controller.EmployeeController"
+      spacing="15" alignment="CENTER" style="-fx-padding: 30"
+      prefWidth="300" prefHeight="250">
+
+    <Button text="Submit Bugs" onAction="#handleSubmitBugs"/>
+    <Button text="View Bug List" onAction="#handleViewBugs"/>
+    <Button fx:id="logoutButton" text="Log Out" onAction="#handleLogout"/>
+
+</VBox>

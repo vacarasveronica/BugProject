@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="iss.bugproject.controller.SubmitBugController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20" prefWidth="400">
+
+    <Label text="Submit Bug (Tester only)"/>
+
+    <TextField fx:id="bugNameField" promptText="Bug Title"/>
+    <TextArea fx:id="bugDescriptionField" promptText="Bug Description" prefRowCount="4"/>
+
+    <Button text="Choose File" onAction="#handleChooseFile"/>
+    <Label fx:id="filePathLabel" text="No file selected" wrapText="true"/>
+    <TextField fx:id="fileDescriptionField" promptText="File Description" />
+
+    <Button text="Submit Bug" onAction="#handleSubmit"/>
+    <Label fx:id="errorLabel" textFill="red"/>
+</VBox>
